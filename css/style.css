@@ -1,0 +1,1201 @@
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+body.dark{
+    background-color: #000000;
+}
+
+header{
+    max-width: 100vw;
+    height: 50vw;
+    font-size: 1em;
+    background-image: url(../img/header@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    width: 90%;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 33px 33px;
+}
+
+body.dark .headerWrapper{
+    background-color: #1D00FF;
+}
+
+#logo{
+    position: absolute;
+    background-image: url(../img/logoLight@2x.svg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    top: 12%;
+    left: 7%;
+}
+
+body.dark #logo {
+    background-image: url(../img/logoDark@2x.svg);
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    left: 60px;
+}
+nav li{
+    display: inline;
+}
+
+nav a{
+    display: inline-block;
+    margin: 40px;
+    margin-top: 35px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #CC0085;
+}
+
+body.dark nav a {
+    color: #ffffff;
+}
+
+.nav{
+    width: 80vw;
+    margin-left: 24vw;
+}
+
+#switch{
+    position: absolute;
+    top: 26%;
+    left: 87%;
+    width: 5.7vw;
+    height: 3vw;
+    background-color: #FFaFE3;
+    border-radius: 33px;
+}
+
+body.dark #switch{
+    background-color: #ffffff;
+}
+
+#sun{
+    width: 2.1vw;
+    height: 2.1vw;
+    margin-top: 8%;
+    margin-left: 10%;
+    float: left;
+    background-image: url(../img/sunLight@2x.svg);
+    background-size: 100%;
+}
+
+body.dark #sun {
+    background-image: url(../img/sunDark@2x.svg);
+}
+
+#moon{
+    width: 2.1vw;
+    height: 2.1vw;
+    margin-top: 8%;
+    margin-left: 5%;
+    float: left;
+    background-image: url(../img/sunLight@2x.svg);
+    background-size: 100%;
+}
+
+body.dark #moon {
+    background-image: url(../img/sunDark@2x.svg);
+}
+
+#buttonSwitch{
+    position: absolute;
+    top: 30%;
+    left: 87.3%;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+body.dark #buttonSwitch{
+    background-color: #1D00FF;
+}
+
+.switchDark {
+    animation-name: switchDark;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes switchDark {
+    0% {left: 87.3%;}
+    100% {left: 90.2%;}
+}
+
+.switchLight {
+    animation-name: switchLight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes switchLight {
+    0% {left: 90.2%;;}
+    100% {left: 87.3%;}
+}
+
+#gradientHeader{
+    max-width: 100vw;
+    height: 50vw;
+    background-image: linear-gradient(#FFAFE3, #CC0085);
+    opacity: 90%;
+}
+
+body.dark #gradientHeader{
+    background-image: linear-gradient(#1D00FF,#0076FF);
+}
+
+.headerTotal{
+    position: absolute;
+    z-index: 1; 
+    margin-top: 22.5vh;
+    margin-left: 15%;
+    color: #ffffff;
+}
+
+h1{
+    max-width: 80vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 1.4em;
+}
+
+.headerTotal p{
+    max-width: 70vw;
+    margin-top: 5vh;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+}
+
+.targetWrapper{
+    position: absolute;
+    margin-left: 8vw;
+}
+
+.targetBoxes{
+    background-color: #F4F2FF;
+    width: 25vw;
+    height: 30vw;
+    float: left;
+    margin-top: -10vh;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+}
+
+body.dark .targetBoxes {
+    background-color: #1D00FF;
+}
+
+.targetBoxes p{
+    font-size: 2vw;
+    color: #CC0085;
+    margin-top: 23vw; 
+}
+
+body.dark .targetBoxes p {
+    color: #ffffff;
+}
+
+#leer{
+    background-image: url(../img/leerLight@2x.svg);
+    background-position-x: 45%;
+}
+
+body.dark #leer{
+    background-image: url(../img/leerDark@2x.svg);
+}
+
+#leer p{
+    margin-left: 10vw;
+}
+
+#codeer{
+    background-image: url(../img/codeerLight@2x.svg);
+    background-position-x: 55%;
+}
+
+body.dark #codeer{
+    background-image: url(../img/codeerDark@2x.svg);
+}
+
+#codeer p{
+    margin-left: 9vw;
+}
+
+#speel{
+    background-image: url(../img/speelLight@2x.svg);
+    background-position-x: 50%;
+}
+
+body.dark #speel{
+    background-image: url(../img/speelDark@2x.svg);
+}
+
+#speel p{
+    margin-left: 10vw;
+}
+
+#playlist {
+    width: 80vw;
+    margin-top: 27vw;
+    margin-left: 10vw;
+}
+
+h2{
+    font-size: 1.5vw;
+    color: #CC0085;
+    margin-bottom: 1.2em;
+}
+
+body.dark h2{
+    color: #ffffff;
+}
+
+h3{
+    color: #CC0085;
+    font-style: 1.3vw;
+    font-weight: bolder;
+}
+
+body.dark h2{
+    color: #ffffff;
+}
+
+.modal {
+    position: fixed;
+    width: 50vw;
+    height: 40vw;
+    margin-top: 12.5vw;
+    margin-left: 25vw;
+    background-color: #f7f6fd;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px #000000;
+    z-index: 4;
+    animation-name: modal;
+    animation-duration: 4s;
+}
+
+@keyframes modal {
+    0% {background-color: transparent;}
+    100% {background-color: #f7f6fd;}
+}
+
+body.dark .modal {
+    background-color: #000000;
+    border: 3px solid #1D00FF;
+    animation-name: modalDark;
+    animation-duration: 4s;
+}
+
+@keyframes modalDark {
+    0% {background-color: transparent;}
+    100% {background-color: #000000;}
+}
+
+.modal h2 {
+    position: fixed;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 8vw;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    animation-name: modalText;
+    animation-duration: 4s;
+}
+
+@keyframes modalText {
+    0% {color: transparent;}
+    100% {color: #CC0085;}
+}
+
+body.dark .modal h2 {
+    animation-name: modalTextDark;
+    animation-duration: 4s;   
+}
+
+@keyframes modalTextDark {
+    0% {color: transparent;}
+    100% {color: #ffffff;}
+}
+
+.modal a {
+    position: fixed;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: #F4F2FF;
+    background-color: #CC0085;
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    margin-left: 44vw;
+    margin-top: 2vw;
+    animation-name: modalExitButton;
+    animation-duration: 4s;
+}
+
+@keyframes modalExitButton {
+    0% {color: transparent; background-color: transparent;}
+    100% {color: #F4F2FF; background-color: #CC0085;}
+}
+
+body.dark .modal a {
+    background-color: #1D00FF;
+    animation-name: modalExitButtonDark;
+    animation-duration: 4s; 
+}
+
+@keyframes modalExitButtonDark {
+    0% {color: transparent; background-color: transparent;}
+    100% {color: #ffffff; background-color: #1D00FF;}
+}
+
+#modalPlay{
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    margin-top: 25vw;
+    margin-left: 17.5vw;
+    background-image: url(../img/playLight@2x.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+body.dark #modalPlay{
+    background-image: url(../img/playDark@2x.svg);
+}
+
+#modalPlayAni{
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    margin-top: 25vw;
+    margin-left: 17.5vw;
+    background-image: url(../img/playLight@2x.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation-name: modalPlayAni;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes modalPlayAni {
+    100% {
+        margin-top: 19.5vw;
+        margin-left: 11vw;
+        width: 20vw; 
+        height: 20vw; 
+        opacity: 0;
+    }
+}
+
+body.dark #modalPlayAni {
+    background-image: url(../img/playDark@2x.svg);
+    animation-name: modalPlayAniDark;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes modalPlayAniDark {
+    100% {
+        margin-top: 19.5vw;
+        margin-left: 11vw;
+        width: 20vw; 
+        height: 20vw; 
+        opacity: 0;
+    }
+}
+
+.modalBackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;  
+    animation-name: modalBackground;
+    animation-duration: 4s;
+}
+
+@keyframes modalBackground {
+    0% {background-color: transparent;}
+    100% {background-color: rgba(0, 0, 0, 0.6);}
+}
+
+
+.ui-accordion .ui-accordion-header {
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button {
+    color: rgba(204, 0, 133, 0.6);
+    border: 2px solid rgba(255, 175, 227, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background: #ffffff;
+}
+
+body.dark .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background: #000000;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    color: #CC0085;
+    border: 2px solid #FFAFE3;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0em;
+}
+
+.ui-widget-content {
+    border: 0px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.video-js{
+    width: 80vw;
+    height: 330px;
+}
+
+.rewindButton{
+    display: none;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    margin-top: -23vh;
+    margin-left: 30vw;
+    background-color: #ffffff;
+    border-radius: 100px;
+    background-image: url(../img/rewindLight@2x.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+    background-position-y: 50%;
+}
+
+body.dark .rewindButton {
+    background-image: url(../img/rewindDark@2x.svg);
+}
+
+.playButton{
+    display: none;
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    margin-top: -25.5vh;
+    margin-left: 36.5vw;
+    background-color: #ffffff;
+    border-radius: 100px;
+    background-image: url(../img/playLight@2x.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    background-position-y: 50%;
+}
+
+body.dark .playButton {
+    background-image: url(../img/playDark@2x.svg);
+}
+
+.forwardButton{
+    display: none;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    margin-top: -23vh;
+    margin-left: 47vw;
+    background-color: #ffffff;
+    border-radius: 100px;
+    background-image: url(../img/forwardLight@2x.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 40%;
+    background-position-y: 50%;
+}
+
+body.dark .forwardButton {
+    background-image: url(../img/forwardDark@2x.svg);
+}
+
+#support{
+    width: 80vw;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+#support p{
+    width: 40vw;
+    margin-top: 1.2em;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    color: #CC0085;
+}
+
+body.dark #support p{
+    color: #ffffff;
+}
+
+#support a{
+    height: 3.5vw;
+    border-radius: 10px;
+    background-color: #CC0085;
+    position: absolute;
+    margin-top: -4vw;
+    margin-left: 63vw;
+    padding: 0px 2.5vw;
+    line-height: 3.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    color: #ffffff;
+}
+
+body.dark #support a{
+    background-color: #1D00FF;
+    color: #ffffff;
+}
+
+.contactStudents{
+    overflow: auto;
+    display: block;
+    white-space: nowrap;
+    height: 15vw;
+    margin-top: 2em;
+    margin-left: 10vw;
+    margin-bottom: 7vw;
+}
+
+.contactWrapper{
+    display: inline-block;
+    height: 15vw;
+    width: 35vw;
+    background-color: #F4F2FF;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 10px;
+}
+
+body.dark .contactWrapper {
+    background-color: #1D00FF
+}
+
+.contactImage {
+    height: 12.5vw;
+    width: 12.5vw;
+    border-radius: 100px;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    background-repeat: no-repeat;
+}
+
+#Alina{
+    background-image: url(../img/alina@2x.jpg);
+    background-size: 130%;
+    background-position-x: 30%;
+    background-position-y: 55%;
+}
+
+#Gorgie{
+    background-image: url(../img/giorgio@2x.jpg);
+    background-size: 100%;
+    background-position-y: 40%;
+}
+
+#Kal{
+    background-image: url(../img/kal@2x.jpg);
+    background-size: 160%;
+    background-position-x: 50%;
+    background-position-y: 80%;
+}
+
+#Norman{
+    background-image: url(../img/norman@2x.jpg);
+    background-size: 160%;
+    background-position-x: 50%;
+    background-position-y: 35%;
+}
+
+.contactWrapper h3{
+    font-size: 1.2vw;
+    margin-left: 52%;
+    margin-top: -28%;
+}
+
+body.dark .contactWrapper h3{
+    color: #ffffff;
+}
+
+.contactWrapper p {
+    color: #FFAFE3;
+    font-size: 1.2vw;
+    margin-top: 3%;
+    margin-left: 52%;
+}
+
+body.dark .contactWrapper p{
+    color: #0076FF;
+}
+
+.contactWrapper a {
+    position: absolute;
+    height: 3vw;
+    line-height: 3vw;
+    font-size: 1.2vw;
+    padding: 0px 10%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #CC0085;
+    margin-top: 5%;
+    margin-left: 52%;
+}
+
+body.dark .contactWrapper a{
+    background-color: #0076FF;
+}
+
+footer{
+    max-width: 100vw;
+    height: 40vh;
+    background-image: url(../img/footer@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#gradientFooter{
+    max-width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(to right, #FFAFE3, #CC0085);
+    opacity: 90%;
+}
+
+body.dark #gradientFooter{
+    background-image: linear-gradient(#1D00FF, #0076FF); 
+}
+
+.footerWrapper{
+    position: absolute;
+    z-index: 2;
+}
+
+footer h1{
+    color: #ffffff;
+    width: 80vw;
+    margin-top: 5vw;
+    margin-left: 10%;
+    text-align: center;
+}
+
+footer p{
+    max-width: 70vw;
+    margin-top: 2.5vw;
+    margin-left: 20%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4vw;
+    line-height: 1.5em;
+}
+
+footer a{
+    position: absolute;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 1.4vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #CC0085;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 2vw;
+    margin-left: 40vw;
+    padding: 0px 2vw;
+}
+
+body.dark footer a{
+    background-color: #1D00FF;
+    color: #ffffff;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 1300px){
+    .headerTotal{
+        margin-top: 15vh;
+    }
+
+    #buttonSwitch{
+        top: 29%;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .nav{
+        margin-left: 20vw;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px){  
+    .headerTotal p{
+        margin-top: 3vw;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .nav{
+        margin-left: 17vw;
+    }
+
+    .targetBoxes{
+        margin-top: -8vh;
+    }
+}
+
+@media only screen and (max-width: 1000px){  
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 1em;
+    }
+
+    #switch{
+        top: 28%;
+        left: 87%;
+        width: 7vw;
+        height: 3.5vw;
+    }
+
+    #sun, #moon{
+        width: 2.6vw;
+        height: 2.6vw;
+        margin-top: 8%;
+    }
+
+    #moon {
+        margin-left: 10%
+    }
+
+    #buttonSwitch{
+        top: 30.5%;
+        width: 3vw;
+        height: 3vw;
+    }
+
+    @keyframes switchDark {
+        0% {left: 87.3%;}
+        100% {left: 91.2%;}
+    }
+    
+    @keyframes switchLight {
+        0% {left: 91.2%;;}
+        100% {left: 87.3%;}
+    }
+
+    .rewindButton{
+        margin-top: -21vh;
+    }
+    
+    .playButton{
+        margin-top: -23vh;
+    }
+    
+    .forwardButton{
+        margin-top: -21vh;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    nav a{
+        margin-top: 40px;
+    }
+
+    .headerTotal{
+        margin-top: 12.5vh;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    nav a{
+        font-size: 2vw;
+        margin: 30px;
+        margin-top: 40px;
+    }
+
+    #logo{
+        background-size: 90%;
+        width: 60px;
+        height: 60px;
+        top: 22%;
+    }
+
+    header{
+        height: 70vw;
+    }
+
+    #gradientHeader{
+        height: 70vw;
+    }
+
+    .headerTotal{
+        margin-top: 20vh;
+    }
+
+    .rewindButton{
+        width: 6vw;
+        height: 6vw;
+        margin-top: -23vh;
+        margin-left: 24vw;
+    }
+    
+    .playButton{
+        width: 11vw;
+        height: 11vw;
+        margin-top: -25.5vh;
+        margin-left: 34.5vw;
+    }
+    
+    .forwardButton{
+        width: 6vw;
+        height: 6vw;
+        margin-top: -23vh;
+        margin-left: 50vw;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    nav a{
+        margin: 30px;
+        margin-top: 40px;
+    }
+
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 0.9em;
+    }
+
+    h2{
+        font-size: 2.5vw;
+    }
+
+    h3{
+        font-style: 2.3vw;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        font-size: 2.3vw;
+    }
+
+
+    #support p{
+        font-size: 2vw;
+    }
+
+    #support a{
+        padding: 2vw 2.5vw;
+        margin-top: -8vw;
+        margin-left: 58vw;
+        line-height: 3.5vw;
+        font-size: 2vw;
+    }
+
+    .contactWrapper h3{
+        font-size: 2vw;
+        margin-left: 48%;
+    }
+
+    .contactWrapper p {
+        font-size: 2vw;
+        margin-left: 48%;
+    }
+    
+    .contactWrapper a {
+        height: 3vw;
+        line-height: 3vw;
+        font-size: 2vw;
+        padding: 1% 10%;
+        margin-top: 3%;
+        margin-left: 48%;
+    }
+
+    footer p{
+        font-size: 2.2vw;
+    }
+    
+    footer a{
+        font-size: 2.2vw;
+        margin-top: 4vw;
+        padding: 1vw 2vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    nav a{
+        margin: 25px;
+        margin-top: 40px;
+    }
+
+    .headerTotal{
+        margin-top: 17.5vh;
+    }
+
+    #switch{
+        top: 32%;
+        left: 86%;
+        width: 7.5vw;
+        height: 3.75vw;
+    }
+
+    #buttonSwitch{
+        top: 35%;
+    }
+
+    @keyframes switchDark {
+        0% {left: 86.5%;}
+        100% {left: 90.2%;}
+    }
+    
+    @keyframes switchLight {
+        0% {left: 90.2%;;}
+        100% {left: 86.5%;}
+    }
+}
+
+@media only screen and (max-width: 700px){
+    nav a{
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    footer{
+        height: 25vh;
+    }
+    
+    #gradientFooter{
+        height: 25vh;
+    }
+
+    .rewindButton{
+        margin-top: -20vh;
+    }
+    
+    .playButton{
+        margin-top: -22vh;
+    }
+    
+    .forwardButton{
+        margin-top: -20vh;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .headerWrapper{
+        height: 80px;
+    }
+
+    #logo{
+        top: 15%;
+    }
+
+    nav a{
+        margin: 17.5px;
+        margin-top: 35px;
+    }
+
+    .headerTotal{
+        margin-top: 15vh;
+    }
+
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .headerTotal{
+        margin-top: 12.5vh;
+    }
+
+    .contactStudents{
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #logo{
+        background-size: 100%;
+        width: 45px;
+        height: 45px;
+    }
+
+    nav a{
+        margin: 15px;
+        margin-top: 35px;
+    }
+
+    #switch{
+        top: 35%;
+        left: 86%;
+        width: 7.5vw;
+        height: 3.75vw;
+    }
+
+    #sun, #moon{
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+
+    #buttonSwitch{
+        top: 38%;
+    }
+
+    @keyframes switchDark {
+        0% {left: 86.5%;}
+        100% {left: 90.5%;}
+    }
+    
+    @keyframes switchLight {
+        0% {left: 90.5%;;}
+        100% {left: 86.5%;}
+    }
+    
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 0.7em;
+    }
+
+    footer h1{
+        margin-top: 12.5vw;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    nav a{
+        margin: 12.5px;
+        margin-top: 35px;
+    }
+
+    header{
+        height: 90vw;
+    }
+
+    #gradientHeader{
+        height: 90vw;
+    }
+
+    .headerTotal{
+        margin-top: 15vh;
+    }
+    
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 0.6em;
+    }
+
+    .rewindButton{
+        width: 8vw;
+        height: 8vw;
+        margin-top: -21vh;
+        margin-left: 22vw;
+    }
+    
+    .playButton{
+        width: 13vw;
+        height: 13vw;
+        margin-top: -22.5vh;
+        margin-left: 34.5vw;
+    }
+    
+    .forwardButton{
+        width: 8vw;
+        height: 8vw;
+        margin-top: -21vh;
+        margin-left: 52vw;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .headerWrapper{
+        height: 60px;
+    }
+
+    #logo{
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+    }
+
+    nav a{
+        margin: 10px;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #buttonSwitch{
+        top: 37.5%;
+    }
+
+    .headerTotal{
+        margin-top: 12.5vh;
+    }
+    
+    .headerTotal p{
+        margin-top: 2vw;
+        font-size: 0.5em;
+    }
+
+    footer{
+        height: 20vh;
+    }
+    
+    #gradientFooter{
+        height: 20vh;
+    }
+}
