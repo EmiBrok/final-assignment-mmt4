@@ -67,8 +67,7 @@ $( document ).ready(function() {
             })
 
             myPlayer.on('ended', function(){
-                $(".modalWrapper").append("<div class='modal'><a href='#' class='click'> X </a><h2> Nu al afgelopen? <br> Kijk ook meteen volgende!</h2><div id='modalPlay'></div><div id='modalPlayAni'></div></div><div class='modalBackground'></div>")
-                alert('video is done!');
+                $(".modalWrapper").append("<div class='modal'><a href='#' class='click'> X </a><h2> Nu al afgelopen? <br> Kijk ook meteen volgende!</h2><div id='modalPlay'></div><div id='modalPlayAni'></div></div><div class='modalBackground'></div>");
 
                 $(".click").click(function(event){
                     event.preventDefault();
